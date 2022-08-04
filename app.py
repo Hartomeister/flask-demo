@@ -12,9 +12,9 @@ def home():
 def index():
     return render_template('index.html')
 
-@app.route('/about.html')
+@app.route('/id.html')
 def about():
-    return render_template('about.html')
+    return render_template('id.html')
 
 
 
