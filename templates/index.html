@@ -9,7 +9,7 @@ font-family: 'Quicksand', sans-serif;
 p {
 position: absolute; top: 30%; left: 50%; -moz-transform: translateX(-50%) translateY(-30%); -webkit-transform: translateX(-50%) translateY(-30%); transform: translateX(-50%) translateY(-30%);
 }
-button {
+input {
 background-color: #556BC8;
   border: none;
   color: white;
@@ -26,29 +26,22 @@ position: absolute; top: 50%; left: 50%; -moz-transform: translateX(-50%) transl
 </style>
 
 </style>
-<center><p>Actual link to my Telegram</p>
+<center><p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
 
-
-<center><button onclick="myFunction()">Copy link</button>
 
 <script>
-function myFunction() {
-  /* Get the text field */
-  var copyText = "https://t.me/youkea"
-
-  /* Select the text field */
-  /* For mobile devices */
-
-  /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText);
-  
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText);
-}
+	function newLocation() {
+		window.location.href="page.html";
+	}
 </script>
+
+<input type="button" value="Go to new location" onclick="newLocation()">
+
 
 </body>
 </html>
+
+
 
 
 
