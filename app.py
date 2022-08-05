@@ -10,9 +10,6 @@ def home():
 @app.route('/index.html')
 def index():
     return render_template('index.html')
-
-
-def about():
  
 
 
